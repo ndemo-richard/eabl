@@ -2,13 +2,13 @@
   "name": "eabl",
   "version": "0.1.0",
   "engines":{
-	  "node": "15.2.0"
+	  "node": "15.x"
   },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "heroku-postbuild": "npm run build",
     "test": "echo\"error: no test specified\"&& exit 1"
   },
