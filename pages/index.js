@@ -1,6 +1,6 @@
 // pages/index.js
 import ReactPlayer from 'react-player';
-import { Parallax } from 'react-scroll-parallax';
+
 
 import Link from "next/link";
 import Layout from "../components/Layout";
