@@ -1,4 +1,12 @@
-// components/Layout.js
+/* home work
+  <Head>
+        <title>E.A BiggestLoosers</title>
+      </Head>
+
+      <Header appTitle={appTitle} />
+      <NavBar navButtons={navButtons} />
+     
+      */
 import Head from "next/head";
 
 import Header from "./Header";
@@ -16,13 +24,7 @@ const Layout = props => {
 
   return (
     <div className={styles.Layout}>
-      <Head>
-        <title>E.A BiggestLoosers</title>
-      </Head>
-
-      <Header appTitle={appTitle} />
-      <NavBar navButtons={navButtons} />
-     
+   
       <div className={styles.Content}>{props.children}</div>
       <Footer footer={props.children} />
     </div>

@@ -28,3 +28,10 @@
 
   cursor: pointer;
 }
+@media screen and (max-width:768px){
+  .Footer{
+    display:block;
+    margin:auto;
+    color: rebeccapurple;
+  }
+}
