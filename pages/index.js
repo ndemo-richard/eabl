@@ -29,7 +29,7 @@ const Index = ({allPosts:{ edges } }) => (
        height="90%"
        url="https://vimeo.com/377121413" 
        controls
-       playing
+       //playing
        />
        </div>
        <div className={styles.slug}>
@@ -55,15 +55,15 @@ const Index = ({allPosts:{ edges } }) => (
         <ReactPlayer className={styles.react_player}
         width="100%"
         height="100%"
-       url={node.extraPostInfo.videoUrl.mediaItemUrl} 
+       url={node.extraPostInfo.videoLin.url} 
        controls
        //playing
        />
        </div>
        
        
-       <p className={styles.description}>{node.title}</p>
-       
+       <p className={styles.description}>{node.extraPostInfo.description} &nbsp; &nbsp; {node.extraPostInfo.customdate}</p>
+       <p>{node.title}</p>
       </div>
     </div>
       ))}

@@ -44,29 +44,33 @@
 
     .h1{
      
-     
+     font-size:1rem;
      color: rgb(245, 245, 243);
 
     }
     .h4{
      
-     font-size: 1,5rem;
+     font-size: 1.5rem;
      color: rgb(245, 245, 243);
     }
   }
+  .video_outer{
+	  display:inline-block;
+	  width:214px;
+	  //background-color:blue;
+  }
    .show_video{
-     
     //background-color: red;
     background-color: transparent;
     width: 100%;
-    height: 14rem;
+    height: 8rem;
   }
   .slug{
-    margin-top: -1.5rem;
-    display: inline;
+    margin-top:-4%;
+    display: block;
     width: 100%;
-    height: 6rem;
-   // background-color: blue;
+    height: 4rem;
+    // background-color:yellow;
   }
   .slug_date{
     margin-top: 0.7em;
@@ -84,16 +88,38 @@
     margin-left: 12rem;
   margin-right: 12rem;
   width:auto;
-  height: 270px;
+  height: 300px;
+  overflow:hidden;
   //background-color: pink;
   }
+  .episode_video{
+    width:300px;
+    height: auto;
+    position: relative;
+     
+    background-color: green;
+   }
+   .react_player {
+    position: relative;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+  }
+   .react_player video {
+    position: relative;
+    left: 0;
+    top: -19%;
+    //width: 400px;
+    transform: none;
+  }
+  
   
 .clips_show{
   
   margin-left: 12rem;
   margin-right: 12rem;
   width:auto;
-  height: 270px;
+  height: 300px;
   //background-color:blue;
 
 }
@@ -132,10 +158,16 @@
   align-items: center;
   justify-self: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x:scroll;
+  overflow-y:hide;
+  -webkit-overflow-scrlling:touch;
+  white-space:nowrap;
+  padding-bottom:5px;
+  height:320px;
   //background-color: purple;
   max-width: 100%;
-  margin-top: 3rem;
+  
 }
 
 .card {
@@ -180,7 +212,7 @@ hapa ni kujaribu
 */
 //meadia queries
 
-  @media screen and (max-width:768px){
+@media screen and (max-width:768px){
     
   .container{
     height: 100%;
