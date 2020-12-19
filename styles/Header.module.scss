@@ -15,7 +15,7 @@
   padding: 0 20px;
 
   margin-top: 4.5rem;
-  margin-left: 14rem;
+  margin-left: 2rem;
 
   font-family: $logo-font;
   font-size: 24px;
@@ -26,4 +26,10 @@
   background: $highlight;
 
   cursor: pointer;
+}
+@media (max-width:768px){
+   .Header{
+	   display:none;
+   }
+
 }

@@ -11,14 +11,21 @@ const Nav = styled.nav`
   justify-content: space-between;
   .logo {
     padding: 15px 0;
+    color:#fff;
+    margin-left:10rem;
   }
+  @media (max-width:768px){
+   .logo{
+   margin:0;
+   }
+   }
 `
 
 const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        Eabl
+        EABL
       </div>
       <Burger />
     </Nav>

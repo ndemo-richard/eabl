@@ -3,11 +3,17 @@ import styled from 'styled-components';
 
 const Ul = styled.ul`
   list-style: none;
+  position:relative;
+  right:40%;
+  width:600px;
   display: flex;
   flex-flow: row nowrap;
 
   li {
-    padding: 0px 15px;
+    padding: 0 15px;
+    color:#fff;
+    font-size:1.1rem;
+
   }
 
   @media (max-width: 768px) {
@@ -17,6 +23,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
+    z-index:2;
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
@@ -31,9 +38,9 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact Us</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/Shows">Shows</a></li>
+      <li><a href="/App">App</a></li>
       <li>Sign In</li>
       <li>Sign Up</li>
     </Ul>
