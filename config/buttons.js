@@ -1,27 +1,29 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCompass,
+  faHome,
   faMapMarkerAlt,
   faUser,
+  faFilm,
+  faMobileAlt,
   faShoppingCart
  } from "@fortawesome/free-solid-svg-icons";
 
 const navButtons = [
   {
     label: "Home",
-    path: "/Home",
-    icon: <FontAwesomeIcon icon={faCompass} />
+    path: "/",
+    icon: <FontAwesomeIcon icon={faHome} />
   },
   {
     label: "Shows",
     path: "/Shows",
-    icon: <FontAwesomeIcon icon={faMapMarkerAlt} />
+    icon: <FontAwesomeIcon icon={faFilm} />
   },
   {
     label: "App",
     path: "/App",
-    icon: <FontAwesomeIcon icon={faShoppingCart} />
+    icon: <FontAwesomeIcon icon={faMobileAlt} />
   },
   {
     label: "Login",

@@ -75,19 +75,19 @@ const Index = ({allPosts:{ edges } }) => (
     
       <div className={styles.grid}>
           <a href="https://nextjs.org/ds" className={styles.card}>
-          <img class={styles.clips_img}src="/6.jpg" alt="pic one"width={290} height={150}/>
+          <img className={styles.clips_img}src="/6.jpg" alt="pic one"width={290} height={150}/>
             <h3> S1E2 | 03/10/20</h3>
             <p>Find grip &rarr; </p>
           </a>
 
           <a href="https://nextjs.org/ds" className={styles.card}>
-          <img class={styles.clips_img} src="/d.jpg" alt="pic one"width={290} height={150}/>
+          <img className={styles.clips_img} src="/d.jpg" alt="pic one"width={290} height={150}/>
             <h3> S1E2 | 03/10/20</h3>
             <p>Find grip &rarr; </p>
           </a>
 
           <a href="https://nextjs.org/ds" className={styles.card}>
-          <img class={styles.clips_img} src="/e.jpg" alt="pic one"width={290} height={150}/>
+          <img className={styles.clips_img} src="/e.jpg" alt="pic one"width={290} height={150}/>
             <h3> S1E2 | 03/10/20</h3>
             <p>Find grip &rarr; </p>
           </a>

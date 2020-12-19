@@ -1,12 +1,4 @@
-/* home work
-  <Head>
-        <title>E.A BiggestLoosers</title>
-      </Head>
 
-      <Header appTitle={appTitle} />
-      <NavBar navButtons={navButtons} />
-     
-      */
 import Head from "next/head";
 
 import Header from "./Header";
@@ -19,14 +11,23 @@ import styles from "../styles/Layout.module.scss";
 
 import navButtons from "../config/buttons";
 
+
 const Layout = props => {
   const appTitle = `>eabl<`;
 
   return (
     <div className={styles.Layout}>
-   
+	  <head>
+	  <title>E.A BiggestLoser</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	  </head>
+	  <Header appTitle={appTitle} />
+
+         <NavBar />
+
       <div className={styles.Content}>{props.children}</div>
-      <Footer footer={props.children} />
+      
+	  <Footer footer={props.children} />
     </div>
   );
 };

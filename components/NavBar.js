@@ -1,19 +1,28 @@
-// components/NavBar.js
+import React from 'react';
+import styled from 'styled-components';
+import Burger from './Burger';
 
-import styles from "../styles/NavBar.module.scss";
-import NavButton from "./NavButton";
+const Nav = styled.nav`
+  width: 200px;
+  height: 55px;
+  background-color:red;
+  padding:0 20px;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    padding: 15px 0;
+  }
+`
 
-const NavBar = props => (
-  <div className={styles.NavBar}>
-    {props.navButtons.map(button => (
-      <NavButton
-        key={button.path}
-        path={button.path}
-        label={button.label}
-        icon={button.icon}
-      />
-    ))}
-  </div>
-);
+const Navbar = () => {
+  return (
+    <Nav>
+      <div className="logo">
+        Eabl
+      </div>
+      <Burger />
+    </Nav>
+  )
+}
 
-export default NavBar;
+export default Navbar
